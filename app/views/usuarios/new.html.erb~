@@ -1,0 +1,16 @@
+<h1> Nuevo Usuario</h1>
+<%= form_for @usuario do |f| %>
+<label>Nombre</label>
+<%= f.text_field :nombre %>
+<br>
+<label>Apellido</label>
+<%= f.text_field :apellido %>
+<br>
+<label>Correo</label>
+<%= f.text_field :correo %>
+<br>
+<label>Fecha de Nacimiento</label>
+<%= f.date_select :fechanacimiento %>
+<br>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,2 @@
+<h2>Ir a Usuarios</h2>
+<p><%= link_to 'Usuarios', usuarios_path %></p>

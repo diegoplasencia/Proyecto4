@@ -1,0 +1,4 @@
+class RenoveEdadFromUsuarios < ActiveRecord::Migration
+  def change
+  end
+end

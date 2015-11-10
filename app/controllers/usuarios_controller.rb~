@@ -1,0 +1,33 @@
+class UsuariosController < ApplicationController
+ #usuarios
+  def index
+  end
+  
+ #usuarios/new
+ def new
+  	   
+  	  @usuario = Usuario.new
+  	
+end
+#post /usuarios
+def create
+  	    @usuario = Usuario.new(usuario_params)
+  	    if @usuario.save
+  	    	redirect_to '/'
+  	    else
+  	    	format.html { render :new }
+  	    	
+  end
+end
+
+
+private 
+def usuario_params
+	
+	params.require(:usuario).permit(:nombre, :apellido, :correo, :fechanacimiento)
+end
+end
+
+
+
+   
